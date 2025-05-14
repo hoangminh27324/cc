@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop 953 detail</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="images/sigay.jpg">
+    <style>
+        .contact-icons {
+            position: fixed; /* Đặt vị trí cố định */
+            right: 0; /* Sát mép phải */
+            bottom: 50px; /* Cách đáy trang 50px */
+            display: flex;
+            flex-direction: column; /* Sắp xếp các nút theo cột */
+            gap: 10px; /* Khoảng cách giữa các nút */
+            z-index: 1000; /* Đảm bảo hiển thị trên các phần tử khác */
+        }
+
+        .contact-icons .btn {
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-align: center; /* Căn giữa nội dung trong nút */
+            white-space: nowrap; /* Ngăn chữ bị xuống dòng */
+            transition: background-color 0.3s ease;
+            width: auto; /* Đảm bảo nút tự động điều chỉnh kích thước theo nội dung */
+        }
+
+        .contact-icons .btn:first-child {
+            background-color: #28a745; /* Màu xanh lá cho nút đầu tiên */
+            color: #fff;
+            border: none;
+        }
+
+        .contact-icons .btn:last-child {
+            background-color: #000; /* Màu đen cho nút cuối cùng */
+            color: #fff;
+            border: none;
+        }
+
+        .contact-icons .btn:hover {
+            opacity: 0.8; /* Hiệu ứng mờ khi hover */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Shop 953</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto"> <!-- Đổi ms-auto thành me-auto để căn trái -->
+                    <li class="nav-item"><a class="nav-link" href="#">Trang Chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Danh Mục</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Hỗ Trợ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Liên Hệ</a></li>
+                </ul>
+                <div class="d-flex align-items-center"> <!-- Thêm phần này để chứa các nút -->
+                    <button class="btn btn-outline-light me-2">
+                        <i class="fas fa-user"></i> Đăng Nhập
+                    </button>
+                    <button class="btn btn-outline-light me-2">
+                        <i class="fas fa-user-plus"></i> Đăng Ký
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="VI" style="width: 20px; height: 15px;"> VI
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="VI" style="width: 20px; height: 15px;"> VI
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="EN" style="width: 20px; height: 15px;"> EN                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        <h2>Uy Tín Tạo Nên Thương Hiệu</h2>
+    </div>
+    <div class="support-section text-center py-3">
+        <img src="images/momo.png" alt="Momo">
+        <img src="images/visa.png" alt="ATM">
+    </div>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-4 bg-dark text-light p-3">
+                <!-- Tabs -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="nap-tien-tab" data-bs-toggle="tab" data-bs-target="#nap-tien" type="button" role="tab" aria-controls="nap-tien" aria-selected="true">
+                            NẠP TIỀN
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="top-nap-tab" data-bs-toggle="tab" data-bs-target="#top-nap" type="button" role="tab" aria-controls="top-nap" aria-selected="false">
+                            TOP NẠP THÁNG 05
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content bg-dark p-3" id="myTabContent">
+                    <!-- Nạp Tiền -->
+                    <div class="tab-pane fade show active" id="nap-tien" role="tabpanel" aria-labelledby="nap-tien-tab">
+                        <form>
+                            <div class="mb-3">
+                                <label for="network" class="form-label">Chọn nhà mạng</label>
+                                <select id="network" class="form-select">
+                                    <option selected>Viettel</option>
+                                    <option>Mobifone</option>
+                                    <option>Vinaphone</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="amount" class="form-label">Chọn mệnh giá</label>
+                                <select id="amount" class="form-select">
+                                    <option selected>10.000đ</option>
+                                    <option>20.000đ</option>
+                                    <option>50.000đ</option>
+                                    <option>100.000đ</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cardCode" class="form-label">Mã số thẻ</label>
+                                <input type="text" id="cardCode" class="form-control" placeholder="Nhập mã số thẻ">
+                            </div>
+                            <div class="mb-3">
+                                <label for="serial" class="form-label">Số serial</label>
+                                <input type="text" id="serial" class="form-control" placeholder="Nhập số serial">
+                            </div>
+                            <button type="submit" class="btn btn-warning w-100">NẠP THẺ</button>
+                            <p class="text-center mt-2 text-danger">Hãy chọn đúng mệnh giá. Sai sẽ mất thẻ</p>
+                        </form>
+                    </div>
+
+                    <!-- Top Nạp Tháng 05 -->
+                    <div class="tab-pane fade" id="top-nap" role="tabpanel" aria-labelledby="top-nap-tab">
+                        <h4 class="text-warning">TOP NẠP THÁNG 05</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-dark text-light">1. Phạm Gia Khiêm - 20,500,000đ</li>
+                            <li class="list-group-item bg-dark text-light">2. Phạm Anh Phương - 19,600,000đ</li>
+                            <li class="list-group-item bg-dark text-light">3. Trương Quang Huy - 11,600,000đ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phần Banner -->
+            <div class="col-md-8 p-0">
+                <div class="banner">
+                    <img src="images/cry.webp" alt="Banner" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <!-- Thông Tin Tài Khoản -->
+        <div class="bg-dark text-light p-3 rounded mb-4">
+            <h4 class="text-warning">Tài Khoản #1615</h4>
+            <p><strong>Rank:</strong> Vàng 1</p>
+            <p><strong>Khung:</strong> Không</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <button class="btn btn-warning">Mua Ngay Giá: 2.000.000đ</button>
+                <button class="btn btn-primary">Share Lên Facebook</button>
+            </div>
+        </div>
+
+        <!-- Chi Tiết Tài Khoản -->
+        <div class="bg-dark text-light p-3 rounded mb-4">
+            <h4 class="text-warning">Chi Tiết Tài Khoản</h4>
+            <img src="images/jack.jpg" alt="Account Details" class="img-fluid rounded mb-3">
+            <p><strong>Tướng Thông Thạo Cao Nhất:</strong> Yasuo, Zed, Lee Sin</p>
+            <p><strong>Trang Phục:</strong> Hàng Hiệu, Huyền Thoại</p>
+            <p><strong>Thành Tích:</strong> 496 Điểm Thông Thạo</p>
+        </div>
+
+        <!-- Tướng và Trang Phục -->
+        <div class="bg-dark text-light p-3 rounded mb-4">
+            <h4 class="text-warning">Tướng và Trang Phục</h4>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="images/champion1.jpg" alt="Champion 1" class="img-fluid rounded">
+                    <p class="text-center">Yasuo</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/champion2.jpg" alt="Champion 2" class="img-fluid rounded">
+                    <p class="text-center">Zed</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/champion3.jpg" alt="Champion 3" class="img-fluid rounded">
+                    <p class="text-center">Lee Sin</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/skin.jpg" alt="Skin" class="img-fluid rounded">
+                    <p class="text-center">Trang Phục Hàng Hiệu</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thông Tin Thêm -->
+        <div class="bg-dark text-light p-3 rounded">
+            <h4 class="text-warning">Thông Tin Thêm</h4>
+            <p><strong>Tổng Số Tướng:</strong> 167</p>
+            <p><strong>Trang Phục:</strong> 50</p>
+            <p><strong>Thần Thoại:</strong> 10</p>
+        </div>
+    </div>
+    
+    <footer class="footer bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Thông tin liên hệ -->
+                <div class="col-md-4">
+                    <p>Địa chỉ: 518/19 Trường Chinh phường Tân Sơn Nhì, Tân Phú</p>
+                    <p>&copy; 2015, Copyright by Bán Acc Liên Minh Huyền Thoại Giá Rẻ - Uy Tín.</p>
+                </div>
+                <!-- Hotline -->
+                <div class="col-md-4 text-center">
+                    <div class="hotline bg-warning text-light p-2 rounded">
+                        <p>Hotline: <strong>0911 476 433</strong></p>
+                        <p>Phạm Anh Phương</p>
+                    </div>
+                    <div class="working-time bg-secondary text-light p-2 rounded mt-2">
+                        <p>Thời gian làm việc: <strong>GIAO DỊCH TỰ ĐỘNG 24/24</strong> các ngày trong tuần</p>
+                    </div>
+                </div>
+                <!-- Thống kê -->
+                <div class="col-md-4">
+                    <p>Acc đã bán ra: <strong>188.546</strong></p>
+                    <p>Tổng số thành viên: <strong>270.679</strong></p>
+                    <p>Đang online: <strong>1</strong></p>
+                    <p>Số lần truy cập: <strong>40.105.320</strong></p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-google"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
